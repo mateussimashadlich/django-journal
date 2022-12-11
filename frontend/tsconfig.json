@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "allowJs": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "module": "es6", 
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,     
+    },
+    "include": [
+        "src"
+    ]
+  }
