@@ -9,6 +9,10 @@ A django project for newspaper publications.
     <li>Make</li> 
 </ol>
 <p>With the two items above installed, execute the command <code>make</code> in project folder. This way frontend and backend containers will be built and run.</p>
+<h2>Credentials</h2>
+<p>Username: master</p>
+<p>Password: M@ster!000</p>
+<p>The credentials are used to access both frontend and API.<br>API uses token authentication, in order to obtain the token, make a POST request to http://localhost:8000/api-token-auth/.<br> When making a request to publications endpoint, pass the token in the request header.<br>Example:  <code>Authorization: Token your_token </code>
 
 <h2>API Documentation</h2>
 <p>The newspaper API documentation can be found on <a href="http://localhost:8000/v1/swagger/">http://localhost:8000/v1/swagger/</a></p>

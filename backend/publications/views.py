@@ -1,10 +1,12 @@
-from django.shortcuts import render
+
 from rest_framework import viewsets
-from .serializers import PublicationModelSerializer
+from rest_framework.permissions import IsAuthenticated
+
 from .models import Publication
-# Create your views here.
+from .serializers import PublicationModelSerializer
 
 
 class PublicationModelViewSet(viewsets.ModelViewSet):
     serializer_class = PublicationModelSerializer
     queryset = Publication.objects.all()
+    permission_classes = [IsAuthenticated]

@@ -9,7 +9,9 @@ export const Publications = () => {
 
   useEffect(() => {
     axios
-      .get(HOST + "/v1/publications/")
+      .get(HOST + "/v1/publications/", {
+        headers: { Authorization: "Token " + localStorage.getItem("token") },
+      })
       .then((response: AxiosResponse) => {
         console.log(response);
         setPublications(
