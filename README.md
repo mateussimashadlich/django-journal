@@ -12,7 +12,9 @@ A django project for newspaper publications.
 <h2>Credentials</h2>
 <p>Username: master</p>
 <p>Password: M@ster!000</p>
-<p>The credentials are used to access both frontend and API.<br>API uses token authentication, in order to obtain the token, make a POST request to http://localhost:8000/api-token-auth/.<br> When making a request to publications endpoint, pass the token in the request header.<br>Example:  <code>Authorization: Token your_token </code>
+<p>The credentials are used to access both frontend and API. API uses token authentication, in order to obtain the token, make a POST request to <code>http://localhost:8000/api-token-auth/</code>. When making a request to publications endpoint, pass the token in the request header.
+
+Example: <code>Authorization: Token your_token </code>
 
 <h2>API Documentation</h2>
 <p>The newspaper API documentation can be found on <a href="http://localhost:8000/v1/swagger/">http://localhost:8000/v1/swagger/</a></p>
